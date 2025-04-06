@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: #00FF00; 
+    font-family: "Courier New", Courier, monospace; 
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, ul, li, table, th, td, button, input {
+    color: #00FF00;
+}
+
+button, input {
+    background-color: black;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    padding: 5px 10px;
+    font-family: "Courier New", Courier, monospace;
+    cursor: pointer;
+}
+
+button:hover, input:hover {
+    background-color: #00FF00;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #00FF00;
+    padding: 8px;
+    text-align: left;
+}
+
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

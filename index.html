@@ -1,0 +1,73 @@
+<DOCTYPE! HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Control Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Access Control Matrix</h1>
+    <table id="access-control-matrix">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>File 1</th>
+                <th>File 2</th>
+                <th>File 3</th>
+                <th>File 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="aliceRow">
+                <td>Alice</td>
+                <td id="file1">r</td>
+                <td id="file2">r/w</td>
+                <td id="file3">na</td>
+                <td id="file4">r/w</td>
+            </tr>
+            <tr id="bobRow">
+                <td>Bob</td>
+                <td id="file1">na</td>
+                <td id="file2">na</td>
+                <td id="file3">na</td>
+                <td id="file4">r</td>
+            </tr>
+            <tr id="charlieRow">
+                <td>Charlie</td>
+                <td id="file1">r</td>
+                <td id="file2">r</td>
+                <td id="file3">r</td>
+                <td id="file4">r/w</td>
+            </tr>
+            <tr id="dylanRow">
+                <td id="file1">Dylan</td>
+                <td id="file2">r</td>
+                <td id="file3">na</td>
+                <td id="file4">rw</td>
+                <td id="file5">na</td>
+            </tr>
+            <tr id="eugeneRow">
+                <td id="file1">Eugene</td>
+                <td id="file2">r/w</td>
+                <td id="file3">r/w</td>
+                <td id="file4">r/w</td>
+                <td>r/w</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="subjectName"></p>
+    <div>
+        <form id="subjectForm">
+            <input type="text" id="subject" placeholder="Enter subject name">
+            <button type="button" id="submitName">Submit</button>
+        </form>
+    </div>
+    <div>
+        <button id="file1">File 1</button>
+        <button id="file2">File 2</button>
+        <button id="file3">File 3</button>
+        <button id="file4">File 4</button>
+    </div>
+    
+    <script src="script.js"></script>
